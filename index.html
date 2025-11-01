@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Imad El Kars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav">
+        <div class="container nav-inner">
+            <div class="brand">Imad El Kars</div>
+            <nav id="mainNav">
+                <a href="#home">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>Salut, je suis <span class="accent">Imad El Kars</span></h1>
+                    <h2>Développeur Web Full Stack</h2>
+                    <p>Je crée des expériences web modernes, réactives et performantes avec les dernières technologies.</p>
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+                <div class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about container">
+            <h3>À propos de moi</h3>
+            <p>
+                Développeur web passionné avec une formation solide en HTML, CSS, Bootstrap, JavaScript, MySQL, PHP et Python. 
+                J'aime créer des applications web élégantes et fonctionnelles qui offrent une excellente expérience utilisateur.
+            </p>
+            <p>
+                Mon objectif est de continuer à développer mes compétences tout en contribuant à des projets innovants. 
+                Je suis toujours à la recherche de nouveaux défis et opportunités d'apprentissage.
+            </p>
+            <a href="#contact" class="btn btn-primary">Travaillons ensemble</a>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h3>Mes compétences</h3>
+                <div class="skill-grid">
+                    <div class="skill">
+                        <label>HTML5</label>
+                        <div class="bar"><div class="progress" data-value="95"></div></div>
+                    </div>
+                    <div class="skill">
+                        <label>CSS3</label>
+                        <div class="bar"><div class="progress" data-value="90"></div></div>
+                    </div>
+                    <div class="skill">
+                        <label>JavaScript</label>
+                        <div class="bar"><div class="progress" data-value="85"></div></div>
+                    </div>
+                    <div class="skill">
+                        <label>Bootstrap</label>
+                        <div class="bar"><div class="progress" data-value="90"></div></div>
+                    </div>
+                    <div class="skill">
+                        <label>PHP / MySQL</label>
+                        <div class="bar"><div class="progress" data-value="80"></div></div>
+                    </div>
+                    <div class="skill">
+                        <label>Python</label>
+                        <div class="bar"><div class="progress" data-value="75"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects container">
+            <h3>Mes projets</h3>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projet Application Météo -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>Application Météo</h4>
+                        <p>Une application météo moderne avec interface responsive qui affiche les conditions météorologiques en temps réel avec des prévisions détaillées.</p>
+                        <div class="project-links">
+                            <a href="https://meteo-blond-five.vercel.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet Portfolio -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>Portfolio Personnel</h4>
+                        <p>Site portfolio moderne et responsive présentant mes compétences et projets avec des animations fluides et un design élégant.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet E-commerce -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>Site E-commerce</h4>
+                        <p>Plateforme e-commerce complète avec panier, système de paiement et interface administrateur développée avec React et Node.js.</p>
+                        <div class="project-links">
+                            <a href="https://imad2.vercel.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> En développement
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h3>Contactez-moi</h3>
+                <div class="contact-inner">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required />
+                        </div>
+                        <div class="form-row">
+                            <input type="email" id="email" name="email" placeholder="Votre e-mail" required />
+                        </div>
+                        <div class="form-row">
+                            <textarea name="message" id="message" rows="5" placeholder="Votre message" required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                            <span id="formMsg" class="form-msg" role="status" aria-live="polite"></span>
+                        </div>
+                    </form>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>imadlkars@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>0609507349</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Localisation</h4>
+                                <p>Casablanca, Maroc</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year">2024</span> Imad El Kars. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
